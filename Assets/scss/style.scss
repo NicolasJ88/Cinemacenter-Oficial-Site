@@ -1,5 +1,7 @@
 // _layout.scss
 
+@use 'layout';
+
 .body {
   background-color: black;
 }
@@ -115,6 +117,7 @@
   }
 
   // _boxes.scss
+  @use 'boxes';
 
   .main {
     background-color: #000;
@@ -175,6 +178,7 @@
 
 
 // _footer.scss
+@use 'footer';
 
 .footer {
   margin-top: 5px;
