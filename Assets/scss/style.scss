@@ -1,54 +1,61 @@
+// _layout.scss
 
 .body {
-    background-color: black;
+  background-color: black;
 }
 
 .header {
   background-color: white;
   position: sticky;
   top: 0;
-}
 
-.nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  height: 70px;
-  border-bottom: 1px solid #E7EFED;
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    border-bottom: 1px solid #E7EFED;
+
     .nav__logo {
-        height: 50px;
-        margin-left: 18px;
+      height: 50px;
+      margin-left: 18px;
     }
-        .nav__utilities-img {
-            height: 30px;
-            margin-left: 10px;
-        }
-            .nav__logo-container  {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            .nav__menu__list-options {
-                list-style: none;
-            }
-                .nav__menu__list-options__link {
-                      text-decoration: none;
-                      color: #000;
-                      font-size: 16px;
-                }
-                      .nav__menu__list {
-                            width: 500px;
-                            display: flex;
-                            justify-content: space-between;
-                       }
-                            .nav__utilities-container {
-                                  display: flex;
-                                  width: 150px;
-                                  justify-content: space-around;
-                            }
-}
 
+    .nav__utilities-img {
+      height: 30px;
+      margin-left: 10px;
+    }
+
+    .nav__logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .nav__menu__list-options {
+      list-style: none;
+
+      .nav__menu__list-options__link {
+        text-decoration: none;
+        color: #000;
+        font-size: 16px;
+      }
+    }
+
+    .nav__menu__list {
+      width: 500px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .nav__utilities-container {
+      display: flex;
+      width: 150px;
+      justify-content: space-around;
+    }
+  }
+  }
 /*nav responsive*/
   @media (max-width: 1880px) {
     .nav__menu__list {
@@ -107,79 +114,82 @@
            }
   }
 
-  /*Abre cajas*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+  // _boxes.scss
 
-.main{
+  .main {
     background-color: #000;
-}
-
-.caja {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 10px;
-}
-.contenedor{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  .log {
-    background-image: url(https://cdn.avpasion.com/wp-content/uploads/2023/01/codigos-secretos-netflix.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 450px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-      .log__title{
-          font-size: 2rem;
-          margin-top: 5px;
-      }
-          .log__btn{
-              background-color: #E3AF25;
-              color: #fff;
-              border: none;
-              border-radius: 10px;
-              padding: 10px 20px;
-          }
-          .proyectos{
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-                .proyectos__title{
-                    color: #fff;
-                    text-align: center;
-                    font-size: 2rem;
-                }
-            }    
   }
-}
-/*cierran cajas*/
-
-
-
-/*empieza footer*/
-.footer {
-    margin-top: 5px;
-    .footer__sections {
-        display: flex;
-        background-color: #E3AF25;
-        color: #000;
-        width: 100%;
-        justify-content: space-around;
-        align-items: center;
-        border-top: 1px solid #272A26;
+  
+  .caja {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  
+  .contenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  
+    .log {
+      background-image: url(https://cdn.avpasion.com/wp-content/uploads/2023/01/codigos-secretos-netflix.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 450px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+  
+      .log__title {
+        font-size: 2rem;
+        margin-top: 5px;
       }
+  
+      .log__btn {
+        background-color: #e3af25;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 20px;
+      }
+  
+      .proyectos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+  
+        .proyectos__title {
+          color: #fff;
+          text-align: center;
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+
+// _footer.scss
+
+.footer {
+  margin-top: 5px;
+
+  .footer__sections {
+    display: flex;
+    background-color: #e3af25;
+    color: #000;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #272a26;
+  }
+  /* Estilos adicionales para el footer */
+}
         .footer__list {
                 margin: 0;
                 padding: 0;
@@ -336,7 +346,6 @@
             margin-top: 250px;
         }
   }
-}
 /*termia footer*/
   /*hover*/
 .button-hover:hover {
