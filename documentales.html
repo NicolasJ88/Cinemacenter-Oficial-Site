@@ -1,145 +1,179 @@
 <!DOCTYPE html>
+<html lang="es">
 <head>
-<title>CinemaCenter Series</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="Description" content="Pagina dedicada a los resumenes de peliculas,series,documentales y eventos cinematograficos">
-<meta name="Keywords" content="Peliculas,series,documentales,eventos,resumen">
-<link rel="stylesheet" href="./Assets/css/style.css">
+    <title>CinemaCenter - Documentales</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página dedicada a los resúmenes de películas, series, documentales y eventos cinematográficos">
+    <meta name="keywords" content="Películas, series, documentales, eventos, resumen">
+    <link rel="stylesheet" href="./Assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>  
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <a>
-            <a href="index.html"> <img class="nav__logo" src="https://cdn-icons-png.flaticon.com/512/1974/1974054.png" alt="Logo"></a>
-        </a>
-      <a class="navbar-brand" href="#">Cinemacenter</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarScroll">
-        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-          <li class="nav-item">
-            <a class="nav-link active" href="peliculas.html">Peliculas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="series.html">Series</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="documentales.html">Documentales</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="eventos.html">Eventos</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-  </nav>
-<Div class="Columna1"></Div> <!--invisible-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img class="nav__logo" src="https://cdn-icons-png.flaticon.com/512/1974/1974054.png" alt="Logo">
+                <span class="title-cine">CinemaCenter</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+                    <li class="nav-item">
+                        <a class="nav-link" href="peliculas.html">Películas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="series.html">Series</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="documentales.html">Documentales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="eventos.html">Eventos</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="search-input-custom" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn-search-custom" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
 
-<!--Inicio de la caja-->
+    <main>
+        <div class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://image.tmdb.org/t/p/original/nCRUQcbBs6Ix6YaBeCgC9OwE0mt.jpg');">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Los Mejores Documentales</h1>
+                    <p class="hero-subtitle">Explora historias reales que cambiaron el mundo</p>
+                    <button class="btn-view-more">Ver Más</button>
+                </div>
+            </div>
+        </div>
 
-<main>
-  <div class="log">
-    <h1 class="log__title">Los mejores documentales</h1>
-    <button class="log__btn">Ver Más</button>
-</div>
-  <div class="peliculas">
-      <div class="contenedor">
+        <div class="container section">
+            <div class="movie-grid">
+                <div class="movie-card">
+                    <img src="https://www.cineycine.com/archivos/2019/05/diego-maradona-documental-poster.jpg" alt="Diego Maradona">
+                    <div class="movie-info">
+                        <h3>Diego Maradona</h3>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="https://elcomercio.pe/resizer/t7aV8Z9Q_7zY537B-RHTAhM0yLA=/620x0/smart/filters:format(jpeg):quality(90)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/QIRUGQZLF5FJBFJX3QI36T7OSE.jpg" alt="¿Qué hizo Jennifer?">
+                    <div class="movie-info">
+                        <h3>¿Qué hizo Jennifer?</h3>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="https://medias.unifrance.org/medias/20/216/55316/format_page/media.jpg" alt="Shoah">
+                    <div class="movie-info">
+                        <h3>Shoah</h3>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="https://image.tmdb.org/t/p/w500/jvGSujgHvP9FDLSnxNcZFBbv21X.jpg" alt="Cosmos: Mundos Posibles">
+                    <div class="movie-info">
+                        <h3>Cosmos: Mundos Posibles</h3>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="https://image.tmdb.org/t/p/w1280/nCRUQcbBs6Ix6YaBeCgC9OwE0mt.jpg" alt="Osa Polar">
+                    <div class="movie-info">
+                        <h3>Osa Polar</h3>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="https://lumiere-a.akamaihd.net/v1/images/ng_fireoflove_keyart_vertical_3ec5fac2.jpeg?region=0%2C0%2C1944%2C2880" alt="Fire of Love">
+                    <div class="movie-info">
+                        <h3>Fire of Love</h3>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="https://2.bp.blogspot.com/-o8ibNIp4w6Y/WLSAbXv_NPI/AAAAAAAAa1w/lJMETOlM7SQWnL4tbwEHQcHMR0OHKbHJACLcB/s1600/corto4.1miles.jpg" alt="4.1 Millas">
+                    <div class="movie-info">
+                        <h3>4.1 Millas</h3>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="https://urnabios.com/wp-content/uploads/2019/05/Bios-Urn-Blog-Best-Documentaries-about-Nautre-Our-Planet.jpg" alt="Our Planet">
+                    <div class="movie-info">
+                        <h3>Our Planet</h3>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="https://album.mediaset.es/cimg/807010/2019/11/04/atn3qg6wh4m5_elcorazondelteatroreal_poster_98c2.jpg?w=1400" alt="El Corazón del Teatro Real">
+                    <div class="movie-info">
+                        <h3>El Corazón del Teatro Real</h3>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="https://www.todoporhacer.org/wp-content/uploads/2018/05/Poster-Documental-724x1024.jpg" alt="Matadero">
+                    <div class="movie-info">
+                        <h3>Matadero</h3>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="https://i.pinimg.com/736x/65/7e/c1/657ec14eae60ed1010db606cbc3f29f1--la-nostalgia-documentaries.jpg" alt="Nostalgia de la Luz">
+                    <div class="movie-info">
+                        <h3>Nostalgia de la Luz</h3>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="http://de.web.img2.acsta.net/r_1280_720/pictures/16/08/05/17/18/464710.jpg" alt="Human">
+                    <div class="movie-info">
+                        <h3>Human</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <button class="btn-view-moree">Cargar más</button>
+            </div>
+        </div>
+    </main>
 
-          <div class="caja">
-              <img src="https://www.cineycine.com/archivos/2019/05/diego-maradona-documental-poster.jpg" style="width: 198px;" height="300px" alt="Diego Maradona">
-          </div>
-          <div class="caja">
-              <img src="https://elcomercio.pe/resizer/t7aV8Z9Q_7zY537B-RHTAhM0yLA=/620x0/smart/filters:format(jpeg):quality(90)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/QIRUGQZLF5FJBFJX3QI36T7OSE.jpg" style="width: 198px;" height="300px" alt="Que hizo jennifer">
-          </div>
-          <div class="caja">
-              <img src="https://medias.unifrance.org/medias/20/216/55316/format_page/media.jpg" " style="width: 198px;" height="300px" alt="Shoah">
-          </div>
-          <div class="caja">
-              <img src="https://image.tmdb.org/t/p/w500/jvGSujgHvP9FDLSnxNcZFBbv21X.jpg" style="width: 198px;" height="300px" alt="cosmos mundos posibles">
-          </div>
-          <div class="caja">
-              <img src="https://image.tmdb.org/t/p/w1280/nCRUQcbBs6Ix6YaBeCgC9OwE0mt.jpg" style="width: 198px;" height="300px" alt="osa polar">
-          </div>
-          <div class="caja">
-              <img src="https://lumiere-a.akamaihd.net/v1/images/ng_fireoflove_keyart_vertical_3ec5fac2.jpeg?region=0%2C0%2C1944%2C2880" style="width: 198px;" height="300px" alt="fire of love">
-          </div>
-          <div class="caja">
-              <img src="https://2.bp.blogspot.com/-o8ibNIp4w6Y/WLSAbXv_NPI/AAAAAAAAa1w/lJMETOlM7SQWnL4tbwEHQcHMR0OHKbHJACLcB/s1600/corto4.1miles.jpg" style="width: 198px;" height="300px" alt="4.1 millas">
-          </div>
-          <div class="caja">
-              <img src="https://urnabios.com/wp-content/uploads/2019/05/Bios-Urn-Blog-Best-Documentaries-about-Nautre-Our-Planet.jpg" style="width: 198px;" height="300px" alt="our planet">
-          </div>
-          <div class="caja">
-              <img src="https://album.mediaset.es/cimg/807010/2019/11/04/atn3qg6wh4m5_elcorazondelteatroreal_poster_98c2.jpg?w=1400" style="width: 198px;" height="300px" alt="el corazon del teatro real">
-          </div>
-
-          <div class="caja">
-              <img src="https://www.todoporhacer.org/wp-content/uploads/2018/05/Poster-Documental-724x1024.jpg" style="width: 198px;" height="300px" alt="matadero">
-          </div>
-          <div class="caja">
-            <img src="https://i.pinimg.com/736x/65/7e/c1/657ec14eae60ed1010db606cbc3f29f1--la-nostalgia-documentaries.jpg" style="width: 198px;" height="300px" alt="nostalgia de la luz">
-          </div>
-          <div class="caja">
-            <img src="http://de.web.img2.acsta.net/r_1280_720/pictures/16/08/05/17/18/464710.jpg" style="width: 198px;" height="300px" alt="Human">
-          </div>
-          <div class="caja">
-            <img src="https://es.web.img3.acsta.net/pictures/14/10/01/14/22/134269.jpg" style="width: 198px;" height="300px" alt="la sal de la tierra">
-          </div>
-          <div class="caja">
-            <img src="https://m.media-amazon.com/images/M/MV5BNjM2OTI3NzQyNl5BMl5BanBnXkFtZTcwNjkzNzQ5MQ@@._V1_.jpg" style="width: 198px;" height="300px" alt="Vals con bashir">
-          </div>
-          <div class="caja">
-            <img src="https://www.awardsdaily.com/wp-content/uploads/2021/07/The-Alpinist-Final-Jpeg-1382x2048.jpg" style="width: 198px;" height="300px" alt="el alpinista">
-          </div>
-          <div class="caja">
-            <img src="https://danielmarin.naukas.com/files/2019/06/a-768x1152.jpg" style="width: 198px;" style="width: 198px;" height="300px" alt="apollo 11">
-          </div>
-      </div>
-  </div>
-</main>
-
-<!--Final de la caja-->
-
-<footer class="footer">
-  <div class="footer__sections">
-      <!--Soporte-->
-      <div class="footer__section__info">
-          <h3 class="footer__section__info-title">Soporte</h3>
-          <ul class="footer__list">
-              <li class="footer__list-item"><a href="#" class="footer__link list-hover">Preguntas frecuentes</a></li>
-              <li class="footer__list-item"><a href="#" class="footer__link list-hover">Política de privacidad</a></li>
-              <li class="footer__list-item"><a href="#" class="footer__link list-hover">Derechos de autor</a></li>
-              <li class="footer__list-item"><a href="#" class="footer__link list-hover">Consignación de usados</a></li>
-              <li class="footer__list-item"><a href="#" class="footer__link list-hover">Cinemacenter.info@gmail.com</a></li>
-              <li class="footer__list-item"><a href="#" class="footer__link list-hover">11 2344-1972</a></li>
-          </ul>
-      </div>
-    
-      <div class="footer__section-team">
-          <h3 class="footer__section-team__title"> Nosotros</h3>
-          <ul class="footer__list">
-              <li class="footer__list-item"><a href="#" class="footer__link list-hover">A que nos dedicamos</a></li>
-              <li class="footer__list-item"><a href="#" class="footer__link list-hover">Fuentes de contenido</a></li>
-              <li class="footer__list-item"><a href="#" class="footer__link list-hover">Proyectos de todo el mundo</a></li>
-              <li class="footer__list-item"><a href="#" class="footer__link list-hover">Nuestro equipo</a></li>
-          </ul>
-      </div>
-      <div class="footer__section-social">
-          <h3 class="footer__section-social__title">Redes sociales</h3>
-          <ul class="footer__list">
-              <li class="footer_list-item"><a href="#" class="footer__link list-hover">Twitter</a></li>
-              <li class="footer_list-item"><a href="#" class="footer__link list-hover">Instagram</a></li>
-          </ul>
-      </div>
-  </div>
-  <!--copyright-->
-      <p class="footer__copy-paragraph">Todos los derechos de copyright pertenecen a © Cinemacenter, 2024</p>
-</footer>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h3>Soporte</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Derechos de autor</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="mailto:cinemacenter.info@gmail.com">cinemacenter.info@gmail.com</a></li>
+                        <li><a href="tel:1123441972">11 2344-1972</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h3>Nosotros</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">A qué nos dedicamos</a></li>
+                        <li><a href="#">Fuentes de contenido</a></li>
+                        <li><a href="#">Proyectos de todo el mundo</a></li>
+                        <li><a href="#">Nuestro equipo</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h3>Redes sociales</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© CinemaCenter, 2024. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
