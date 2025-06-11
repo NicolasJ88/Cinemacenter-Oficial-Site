@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Página dedicada a los resúmenes de películas, series, documentales y eventos cinematográficos">
     <meta name="keywords" content="Películas, series, documentales, eventos, resumen">
+    <meta name="author" content="marina prochazka, nicolas juliano">
     <link rel="stylesheet" href="./Assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="./Assets/js/carrito.js" defer></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
+        <section class="container">
             <a href="index.html" class="navbar-brand">
                 <img class="nav__logo" src="https://cdn-icons-png.flaticon.com/512/1974/1974054.png" alt="Logo">
                 <span class="title-cine">CinemaCenter</span>
@@ -23,7 +25,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarScroll">
+            <section class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
                     <li class="nav-item">
                         <a class="nav-link" href="peliculas.html">Películas</a>
@@ -37,133 +39,212 @@
                     <li class="nav-item">
                         <a class="nav-link" href="eventos.html">Eventos</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carrito.html">
+                            Mi Lista (<span id="cart-count">0</span>)
+                        </a>
+                    </li>
                 </ul>
                 <form class="d-flex" role="search">
                   <input class="search-input-custom" type="search" placeholder="Buscar" aria-label="Search">
                     <button class="btn-search-custom" type="submit">Buscar</button>
                 </form>
-            </div>
-        </div>
+            </section>
+        </section>
     </nav>
-
+    
     <main>
-        <div class="hero">
-            <div class="container">
-                <div class="hero-content">
+        <section class="hero">
+            <section class="container">
+                <section class="hero-content">
                     <h1 class="hero-title">Películas y Series ilimitadas</h1>
                     <p class="hero-subtitle">Descubre las mejores historias del cine y la televisión</p>
                     <button class="btn-view-more">Ver Más</button>
-                </div>
-            </div>
-        </div>
+                </section>
+            </section>
+        </section>
 
-        <div class="container section">
+        <section class="container section">
             <h2 class="section-title">Destacados</h2>
-            <div class="movie-grid">
-                <div class="movie-card">
-                    <img src="http://cdn.collider.com/wp-content/uploads/2019/03/avengers-endgame-poster.jpg" alt="Avengers Endgame">
-                    <div class="movie-info">
+            <section class="movie-grid">
+                <section class="movie-card">
+                    <img src="img/Endgame.jpg" alt="Avengers Endgame">
+                    <section class="movie-info">
                         <h3>Avengers: Endgame</h3>
-                    </div>
-                </div>
-                <div class="movie-card">
-                    <img src="https://static.posters.cz/image/1300/affiches-et-posters/star-wars-episode-viii-les-derniers-jedi-one-sheet-i97646.jpg" alt="Star Wars Los Últimos Jedi">
-                    <div class="movie-info">
+                        <button class="btn-add-cart" onclick="addToCart('Avengers: Endgame', 'película')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+                <section class="movie-card">
+                    <img src="img/Star Wars.jpg" alt="Star Wars Los Últimos Jedi">
+                    <section class="movie-info">
                         <h3>Star Wars: Los Últimos Jedi</h3>
-                    </div>
-                </div>
-                <div class="movie-card">
-                    <img src="https://picfiles.alphacoders.com/371/371109.jpg" alt="Pulp Fiction">
-                    <div class="movie-info">
+                        <button class="btn-add-cart" onclick="addToCart('Star Wars: Los Últimos Jedi', 'película')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+                <section class="movie-card">
+                    <img src="img/Pulp Fiction.jpg" alt="Pulp Fiction">
+                    <section class="movie-info">
                         <h3>Pulp Fiction</h3>
-                    </div>
-                </div>
-                <div class="movie-card">
-                    <img src="https://www.themoviedb.org/t/p/original/dNydXKTZLQ85i90GbPMK8R1HwaV.jpg" alt="Lord Of The Rings">
-                    <div class="movie-info">
+                        <button class="btn-add-cart" onclick="addToCart('Pulp Fiction', 'película')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+                <section class="movie-card">
+                    <img src="img/The Boys.jpg" alt="The Boys">
+                    <section class="movie-info">
                         <h3>El Señor de los Anillos</h3>
-                    </div>
-                </div>
-                <div class="movie-card">
-                    <img src="https://i.redd.it/new-poster-for-babylon-2022-movie-story-a-tale-of-outsized-v0-we35x1riap2a1.jpg?auto=webp&s=af34cb6bebf4bddc9db0a473b908625453f20973" alt="Babylon">
-                    <div class="movie-info">
+                        <button class="btn-add-cart" onclick="addToCart('El Señor de los Anillos', 'película')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+                <section class="movie-card">
+                    <img src="img/Babylon.jpg" alt="Babylon">
+                    <section class="movie-info">
                         <h3>Babylon</h3>
-                    </div>
-                </div>
-                <div class="movie-card">
-                    <img src="https://www.themoviedb.org/t/p/original/4dBDk1LPdvdhcZdjQBmdXwiVKUA.jpg" alt="Minions">
-                    <div class="movie-info">
+                        <button class="btn-add-cart" onclick="addToCart('Babylon', 'película')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+                <section class="movie-card">
+                    <img src="img/Minions.jpg" alt="Minions">
+                    <section class="movie-info">
                         <h3>Minions</h3>
-                    </div>
-                </div>
-                <div class="movie-card">
-                    <img src="https://www.formulatv.com/images/series/posters/1800/1803/dest_1.jpg" alt="Invincible">
-                    <div class="movie-info">
+                        <button class="btn-add-cart" onclick="addToCart('Minions', 'película')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+                <section class="movie-card">
+                    <img src="img/Invincible.jpg" alt="Invincible">
+                    <section class="movie-info">
                         <h3>Invincible</h3>
-                    </div>
-                </div>
-                <div class="movie-card">
-                    <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2023/05/oppenheimer-poster.jpg" alt="Oppenheimer">
-                    <div class="movie-info">
+                        <button class="btn-add-cart" onclick="addToCart('Invincible', 'serie')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+                <section class="movie-card">
+                    <img src="img/Oppenheimer.jpg" alt="Oppenheimer">
+                    <section class="movie-info">
                         <h3>Oppenheimer</h3>
-                    </div>
-                </div>
-                <div class="movie-card">
-                    <img src="https://cdn.europosters.eu/image/750/wall-murals/the-batman-2022-i124463.jpg" alt="Batman">
-                    <div class="movie-info">
+                        <button class="btn-add-cart" onclick="addToCart('Oppenheimer', 'película')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+                <section class="movie-card">
+                    <img src="img/Batman.jpg" alt="Batman">
+                    <section class="movie-info">
                         <h3>Batman</h3>
-                    </div>
-                </div>
-                <div class="movie-card">
-                    <img src="https://m.media-amazon.com/images/M/MV5BYThiN2M0NTItODRmNC00NDhlLWFiYTgtMWM2YTEyYzI3ZTY1XkEyXkFqcGc@._V1_.jpg" alt="Anora">
-                    <div class="movie-info">
+                        <button class="btn-add-cart" onclick="addToCart('Batman', 'película')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+                <section class="movie-card">
+                    <img src="img/Anora.jpg" alt="Anora">
+                    <section class="movie-info">
                         <h3>Anora</h3>
-                    </div>
-                </div>
-            </div>
+                        <button class="btn-add-cart" onclick="addToCart('Anora', 'película')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+                <section class="movie-card">
+                    <img src="img/superman.jpg" alt="Superman">
+                    <section class="movie-info">
+                        <h3>Superman</h3>
+                        <button class="btn-add-cart" onclick="addToCart('Superman', 'película')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+                <section class="movie-card">
+                    <img src="img/lovede.jpg" alt="Love Death Robots">
+                    <section class="movie-info">
+                        <h3>Love Death Robots</h3>
+                        <button class="btn-add-cart" onclick="addToCart('Love Death Robots', 'serie')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+                <section class="movie-card">
+                    <img src="img/ballerina.jpg" alt="Ballerina">
+                    <section class="movie-info">
+                        <h3>Ballerina</h3>
+                        <button class="btn-add-cart" onclick="addToCart('Ballerina', 'película')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+                <section class="movie-card">
+                    <img src="img/documentales/terra.jpg" alt="Terra">
+                    <section class="movie-info">
+                        <h3>Terra</h3>
+                        <button class="btn-add-cart" onclick="addToCart('Terra', 'documental')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+                <section class="movie-card">
+                    <img src="img/from.jpg" alt="From">
+                    <section class="movie-info">
+                        <h3>From</h3>
+                        <button class="btn-add-cart" onclick="addToCart('From', 'serie')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+            </section>
             
-            <div class="text-center mt-5">
+            <section class="text-center mt-5">
                 <button class="btn-view-moree">Cargar más</button>
-            </div>
-        </div>
+            </section>
+        </section>
     </main>
 
     <footer class="footer">
-        <div class="container">
+        <section class="container">
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <h3>Soporte</h3>
-                    <ul class="footer-links">
+                    <p class="footer-links">
                         <li><a href="#">Preguntas frecuentes</a></li>
                         <li><a href="#">Política de privacidad</a></li>
                         <li><a href="#">Derechos de autor</a></li>
                         <li><a href="#">Contacto</a></li>
                         <li><a href="mailto:cinemacenter.info@gmail.com">cinemacenter.info@gmail.com</a></li>
                         <li><a href="tel:1123441972">11 2344-1972</a></li>
-                    </ul>
+                    </p>
                 </div>
                 <div class="col-md-4 mb-4">
                     <h3>Nosotros</h3>
-                    <ul class="footer-links">
+                    <p class="footer-links">
                         <li><a href="#">A qué nos dedicamos</a></li>
                         <li><a href="#">Fuentes de contenido</a></li>
                         <li><a href="#">Proyectos de todo el mundo</a></li>
                         <li><a href="#">Nuestro equipo</a></li>
-                    </ul>
+                    </p>
                 </div>
                 <div class="col-md-4 mb-4">
                     <h3>Redes sociales</h3>
-                    <ul class="footer-links">
+                    <p class="footer-links">
                         <li><a href="#">Twitter</a></li>
                         <li><a href="#">Instagram</a></li>
-                    </ul>
+                    </p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© CinemaCenter, 2024. Todos los derechos reservados.</p>
+                <p>© CinemaCenter, 2024. Diseñado y maquetado por Nicolás Juliano y Marina Prochazka</p>
             </div>
-        </div>
+        </section>
     </footer>
 </body>
 </html>
-
