@@ -71,7 +71,7 @@ img {
 
 /* Navbar */
 .navbar {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgb(0, 0, 0);
   padding: 15px 0;
   transition: var(--transition);
 }
@@ -114,6 +114,12 @@ img {
   transition: var(--transition);
   transform: translateX(-50%);
 }
+.navbar-toggler-icon {
+    line-height: 1;
+    background-color: red;
+    border-radius: var(--bs-navbar-toggler-border-radius);
+    transition: var(--bs-navbar-toggler-transition);
+}
 
 .navbar-nav .nav-link:hover {
   color: var(--primary-color);
@@ -136,7 +142,7 @@ img {
   padding: 8px 16px;
   font-size: 0.9rem;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 4px rgba(255, 0, 0, 0.05);
   width: 100%;
   margin-right: 8px;
 }
