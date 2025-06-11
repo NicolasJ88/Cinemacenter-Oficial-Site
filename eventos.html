@@ -12,10 +12,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="./Assets/js/carrito.js" defer></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
+        <section class="container">
             <a href="index.html" class="navbar-brand">
                 <img class="nav__logo" src="https://cdn-icons-png.flaticon.com/512/1974/1974054.png" alt="Logo">
                 <span class="title-cine">CinemaCenter</span>
@@ -23,7 +24,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarScroll">
+            <section class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
                     <li class="nav-item">
                         <a class="nav-link" href="peliculas.html">Películas</a>
@@ -37,110 +38,179 @@
                     <li class="nav-item">
                         <a class="nav-link active" href="eventos.html">Eventos</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carrito.html">
+                            Mi Lista (<span id="cart-count">0</span>)
+                        </a>
+                    </li>
                 </ul>
                 <form class="d-flex" role="search">
                   <input class="search-input-custom" type="search" placeholder="Buscar" aria-label="Search">
                     <button class="btn-search-custom" type="submit">Buscar</button>
                 </form>
-            </div>
-        </div>
+            </section>
+        </section>
     </nav>
 
     <main>
-        <div class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://media-cache.cinematerial.com/p/500x/nrwwfi2r/the-oscars-movie-poster.jpg?v=1645283684');">
-            <div class="container">
-                <div class="hero-content">
+        <section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://media-cache.cinematerial.com/p/500x/nrwwfi2r/the-oscars-movie-poster.jpg?v=1645283684');">
+            <section class="container">
+                <section class="hero-content">
                     <h1 class="hero-title">Los Mejores Eventos Cinematográficos</h1>
                     <p class="hero-subtitle">Descubre las ceremonias y festivales más importantes del cine</p>
                     <button class="btn-view-more">Ver Más</button>
-                </div>
-            </div>
-        </div>
+                </section>
+            </section>
+        </section>
 
-        <div class="container section">
-            <div class="movie-grid">
-                <div class="movie-card">
-                    <img src="https://media-cache.cinematerial.com/p/500x/nrwwfi2r/the-oscars-movie-poster.jpg?v=1645283684" alt="Oscars">
-                    <div class="movie-info">
+        <section class="container section">
+            <section class="movie-grid">
+                <section class="movie-card">
+                    <img src="img/EVENTOS/Oscars.jpg" alt="Oscars">
+                    <section class="movie-info">
                         <h3>Premios Oscar</h3>
-                    </div>
-                </div>
-                <div class="movie-card">
-                    <img src="https://www.heyuguys.com/images/2014/01/2014-BAFTA-Film-Awards-Poster.jpg" alt="BAFTA">
-                    <div class="movie-info">
+                        <button class="btn-add-cart" onclick="addToCart('Premios Oscar', 'evento')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+                <section class="movie-card">
+                    <img src="img/EVENTOS/bafta.jpg" alt="BAFTA">
+                    <section class="movie-info">
                         <h3>Premios BAFTA</h3>
-                    </div>
-                </div>
-                <div class="movie-card">
-                    <img src="https://townsquare.media/site/442/files/2016/03/AFFICHE-PORTRAIT-2016-ART-e1458571138603.jpg?w=1200&h=0&zc=1&s=0&a=t&q=89" alt="Festival de Cannes">
-                    <div class="movie-info">
+                        <button class="btn-add-cart" onclick="addToCart('Premios BAFTA', 'evento')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+                <section class="movie-card">
+                    <img src="img/EVENTOS/cannes.jpg" alt="Festival de Cannes">
+                    <section class="movie-info">
                         <h3>Festival de Cannes</h3>
-                    </div>
-                </div>
-                <div class="movie-card">
-                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/d8964384959727.5d6da1c5aeef5.jpg" alt="Emmy">
-                    <div class="movie-info">
+                        <button class="btn-add-cart" onclick="addToCart('Festival de Cannes', 'evento')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+                <section class="movie-card">
+                    <img src="img/EVENTOS/emmys.jpg" alt="Emmy">
+                    <section class="movie-info">
                         <h3>Premios Emmy</h3>
-                    </div>
-                </div>
-                <div class="movie-card">
-                    <img src="https://m.media-amazon.com/images/M/MV5BMDBlOWUxNGQtNGZhOC00OTAyLTkzYWQtYmVhMDgzZTViNzA0L2ltYWdlXkEyXkFqcGdeQXVyMTA0MjU0Ng@@._V1_UY268_CR9,0,182,268_AL_.jpg" alt="Premios Goya">
-                    <div class="movie-info">
+                        <button class="btn-add-cart" onclick="addToCart('Premios Emmy', 'evento')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+                <section class="movie-card">
+                    <img src="img/EVENTOS/goya.jpg" alt="Premios Goya">
+                    <section class="movie-info">
                         <h3>Premios Goya</h3>
-                    </div>
-                </div>
-                <div class="movie-card">
-                    <img src="https://www.cartelera.com.uy/imagenes_espectaculos/moviedetail13/28532.jpg" alt="Globos de Oro">
-                    <div class="movie-info">
+                        <button class="btn-add-cart" onclick="addToCart('Premios Goya', 'evento')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+                <section class="movie-card">
+                    <img src="img/EVENTOS/golden globe.jpg" alt="Globos de Oro">
+                    <section class="movie-info">
                         <h3>Globos de Oro</h3>
-                    </div>
-                </div>
-                <div class="movie-card">
-                    <img src="https://soundtrackfest.com/wp-content/uploads/2017/01/Cesar42-Nominados-Poster.jpg" alt="Premios César">
-                    <div class="movie-info">
+                        <button class="btn-add-cart" onclick="addToCart('Globos de Oro', 'evento')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+                <section class="movie-card">
+                    <img src="img/EVENTOS/cesar.jpg" alt="Premios César">
+                    <section class="movie-info">
                         <h3>Premios César</h3>
-                    </div>
-                </div>
-                <div class="movie-card">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjn3cCJbFD1dt55Cg-xgv-UCuMakkZZv18QvFSOYgWKnjrXmm3rU7jrkg0sU4JXEArR8fwKijSR3LiVuYoauxKiPgfAZOZOY9Jon9Y4jOdFjYCAx9V8B5Sq0sOoxO9EpY0Pt2rvYmmu4FNFxo9Nsm48gKShmBkQ_wN3fo9HIYk9eVgCsl4Ps9Xmshno2w/s1920/annieawards.png" alt="Premios Annie">
-                    <div class="movie-info">
+                        <button class="btn-add-cart" onclick="addToCart('Premios César', 'evento')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+                <section class="movie-card">
+                    <img src="img/EVENTOS/annie.jpg" alt="Premios Annie">
+                    <section class="movie-info">
                         <h3>Premios Annie</h3>
-                    </div>
-                </div>
-                <div class="movie-card">
-                    <img src="https://cdn.vor.us/event/281429/og/f2674989c76e4b83aa5e30932d0d1063.image!png.642694.png.Razzies.png" alt="Premios Razzie">
-                    <div class="movie-info">
+                        <button class="btn-add-cart" onclick="addToCart('Premios Annie', 'evento')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+                <section class="movie-card">
+                    <img src="img/EVENTOS/razzie.jpg" alt="Premios Razzie">
+                    <section class="movie-info">
                         <h3>Premios Razzie</h3>
-                    </div>
-                </div>
-                <div class="movie-card">
-                    <img src="https://img.pikbest.com/01/58/08/33ipIkbEsTqUv.jpg-0.jpg!bw700" alt="Premios Guldbagge">
-                    <div class="movie-info">
+                        <button class="btn-add-cart" onclick="addToCart('Premios Razzie', 'evento')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+                <section class="movie-card">
+                    <img src="img/EVENTOS/guld.jpg" alt="Premios Guldbagge">
+                    <section class="movie-info">
                         <h3>Premios Guldbagge</h3>
-                    </div>
-                </div>
-                <div class="movie-card">
-                    <img src="http://2.bp.blogspot.com/-ogVrYTim1yQ/UND91MU3_II/AAAAAAAAA2A/s28_4oKSD1c/s1600/satellite-awards-askmeany.jpg" alt="Premios Satélite">
-                    <div class="movie-info">
+                        <button class="btn-add-cart" onclick="addToCart('Premios Guldbagge', 'evento')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+                <section class="movie-card">
+                    <img src="img/EVENTOS/satelite.jpg" alt="Premios Satélite">
+                    <section class="movie-info">
                         <h3>Premios Satélite</h3>
-                    </div>
-                </div>
-                <div class="movie-card">
-                    <img src="https://2.bp.blogspot.com/-NA5W4kMsQR0/WenWdcUA1qI/AAAAAAAARqU/_MsB0KAbEqQbhjQzjKSGt2WK87DzWt2WACEwYBhgL/s1600/gotham17.png" alt="Premios Gotham">
-                    <div class="movie-info">
+                        <button class="btn-add-cart" onclick="addToCart('Premios Satélite', 'evento')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+                <section class="movie-card">
+                    <img src="img/EVENTOS/gotham.jpg" alt="Premios Gotham">
+                    <section class="movie-info">
                         <h3>Premios Gotham</h3>
-                    </div>
-                </div>
-            </div>
+                        <button class="btn-add-cart" onclick="addToCart('Premios Gotham', 'evento')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+
+                <section class="movie-card">
+                    <img src="img/EVENTOS/condor.jpg" alt="Premios Condor">
+                    <section class="movie-info">
+                        <h3>Premios Condor</h3>
+                        <button class="btn-add-cart" onclick="addToCart('Premios Condor', 'evento')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+                <section class="movie-card">
+                    <img src="img/EVENTOS/platino.jpg" alt="Premios Platino">
+                    <section class="movie-info">
+                        <h3>Premios Platino</h3>
+                        <button class="btn-add-cart" onclick="addToCart('Premios Platino', 'evento')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+                <section class="movie-card">
+                    <img src="img/EVENTOS/feroz.jpg" alt="Feroz">
+                    <section class="movie-info">
+                        <h3>Feroz</h3>
+                        <button class="btn-add-cart" onclick="addToCart('Feroz', 'evento')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+            </section>
             
-            <div class="text-center mt-5">
+            <section class="text-center mt-5">
                 <button class="btn-view-moree">Cargar más</button>
-            </div>
-        </div>
+            </section>
+        </section>
     </main>
 
     <footer class="footer">
-        <div class="container">
+        <section class="container">
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <h3>Soporte</h3>
@@ -171,9 +241,9 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© CinemaCenter, 2024. Todos los derechos reservados.</p>
+                <p>© CinemaCenter, 2024. Diseñado y maquetado por Nicolás Juliano y Marina Prochazka</p>
             </div>
-        </div>
+        </section>
     </footer>
 </body>
 </html>
