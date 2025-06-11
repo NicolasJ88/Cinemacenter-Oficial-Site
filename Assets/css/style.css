@@ -16,11 +16,11 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: var(--background-dark);
   color: var(--text-color);
   line-height: 1.6;
-  padding-top: 76px; 
+  padding-top: 76px;
 }
 
 a {
@@ -59,7 +59,7 @@ img {
 }
 
 .section-title::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -10px;
   left: 0;
@@ -92,7 +92,7 @@ img {
   margin-right: 10px;
 }
 
-.title-cine{
+.title-cine {
   color: #ffffff;
 }
 .navbar-nav .nav-link {
@@ -103,7 +103,7 @@ img {
 }
 
 .navbar-nav .nav-link::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -115,7 +115,7 @@ img {
 }
 
 .navbar-nav .nav-link:hover {
-  color: var(--primary-color); 
+  color: var(--primary-color);
 }
 
 .navbar-nav .nav-link:hover::after,
@@ -158,10 +158,9 @@ img {
   border-color: rgba(229, 9, 20, 0.2);
 }
 
-
 .btn-search-custom {
   background-color: white;
-  color: #000000; 
+  color: #000000;
   border: none;
   border-radius: 4px;
   padding: 8px 16px;
@@ -174,7 +173,7 @@ img {
 
 .btn-search-custom:hover {
   background-color: #f8f8f8;
-  color: #c00812; 
+  color: #c00812;
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
@@ -192,7 +191,8 @@ img {
 /* Hero Section */
 .hero {
   height: 70vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://cdn.avpasion.com/wp-content/uploads/2023/01/codigos-secretos-netflix.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://cdn.avpasion.com/wp-content/uploads/2023/01/codigos-secretos-netflix.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -202,7 +202,8 @@ img {
 }
 
 .hero-movies {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
 }
 
 .hero-content {
@@ -229,7 +230,7 @@ img {
   background-color: transparent;
   color: white;
   border: 2px solid white;
-  border-radius: 30px; 
+  border-radius: 30px;
   padding: 12px 32px;
   font-size: 1rem;
   font-weight: 500;
@@ -242,7 +243,7 @@ img {
 }
 
 .btn-view-more::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -254,7 +255,7 @@ img {
 }
 
 .btn-view-more:hover {
-  color: #e50914; 
+  color: #e50914;
 }
 
 .btn-view-more:hover::before {
@@ -270,31 +271,11 @@ img {
   box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
 }
 
-.btn-view-more {
-  background-color: transparent;
-  color: white;
-  border: 2px solid white;
-  border-radius: 30px; 
-  padding: 12px 32px;
-  font-size: 1rem;
-  font-weight: 500;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  transition: all 0.4s ease;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-
-
-
-
-
 .btn-view-moree {
   background-color: transparent;
   color: rgb(0, 0, 0);
   border: 2px solid rgb(0, 0, 0);
-  border-radius: 30px; 
+  border-radius: 30px;
   padding: 12px 32px;
   font-size: 1rem;
   font-weight: 500;
@@ -307,7 +288,7 @@ img {
 }
 
 .btn-view-moree::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -334,60 +315,6 @@ img {
   outline: none;
   box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
 }
-
-.btn-view-moree {
-  background-color: transparent;
-  color: rgb(0, 0, 0);
-  border: 2px solid rgb(0, 0, 0);
-  border-radius: 30px; 
-  padding: 12px 32px;
-  font-size: 1rem;
-  font-weight: 500;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  transition: all 0.4s ease;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Movie Grid */
 .movie-grid {
@@ -439,6 +366,31 @@ img {
   color: var(--text-color);
 }
 
+/* Estilos para el botón del carrito */
+.btn-add-cart {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.btn-add-cart:hover {
+  background-color: #c00812;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(229, 9, 20, 0.3);
+}
+
+.btn-add-cart:active {
+  transform: translateY(0);
+}
+
 /* Footer */
 .footer {
   background-color: var(--secondary-color);
@@ -454,7 +406,6 @@ img {
   color: var(--text-color);
 }
 
-/* CAMBIO: Eliminado el pseudo-elemento ::after para quitar la línea debajo de los títulos */
 .footer h3::after {
   display: none;
 }
@@ -471,13 +422,13 @@ img {
 .footer-links a {
   color: var(--text-color);
   transition: var(--transition);
-  text-decoration: none; /* CAMBIO: Asegurando que no haya subrayado */
+  text-decoration: none;
 }
 
 .footer-links a:hover {
   color: var(--primary-color);
   padding-left: 5px;
-  text-decoration: none; /* CAMBIO: Asegurando que no haya subrayado al hacer hover */
+  text-decoration: none;
 }
 
 .footer-bottom {
@@ -494,11 +445,11 @@ img {
   .hero-title {
     font-size: 2.5rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1.2rem;
   }
-  
+
   .movie-grid {
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 20px;
@@ -509,20 +460,20 @@ img {
   .hero {
     height: 60vh;
   }
-  
+
   .hero-title {
     font-size: 2rem;
   }
-  
+
   .section {
     padding: 40px 0;
   }
-  
+
   .movie-grid {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 15px;
   }
-  
+
   .movie-card img {
     height: 250px;
   }
@@ -532,25 +483,26 @@ img {
   .hero {
     height: 50vh;
   }
-  
+
   .hero-title {
     font-size: 1.8rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1rem;
   }
-  
+
   .movie-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
   }
-  
+
   .movie-card img {
     height: 200px;
   }
-  
+
   .section-title {
     font-size: 1.5rem;
   }
 }
+
