@@ -12,10 +12,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="./Assets/js/carrito.js" defer></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
+        <section class="container">
             <a href="index.html" class="navbar-brand">
                 <img class="nav__logo" src="https://cdn-icons-png.flaticon.com/512/1974/1974054.png" alt="Logo">
                 <span class="title-cine">CinemaCenter</span>
@@ -23,7 +24,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarScroll">
+            <section class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
                     <li class="nav-item">
                         <a class="nav-link" href="peliculas.html">Películas</a>
@@ -37,98 +38,178 @@
                     <li class="nav-item">
                         <a class="nav-link" href="eventos.html">Eventos</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carrito.html">
+                            Mi Lista (<span id="cart-count">0</span>)
+                        </a>
+                    </li>
                 </ul>
                 <form class="d-flex" role="search">
                   <input class="search-input-custom" type="search" placeholder="Buscar" aria-label="Search">
                     <button class="btn-search-custom" type="submit">Buscar</button>
                 </form>
-            </div>
-        </div>
+            </section>
+        </section>
     </nav>
 
     <main>
-        <div class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://wallpaperaccess.com/full/2080664.jpg');">
-            <div class="container">
-                <div class="hero-content">
+        <section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://wallpaperaccess.com/full/2080664.jpg');">
+            <section class="container">
+                <section class="hero-content">
                     <h1 class="hero-title">Mira tus Series Favoritas</h1>
                     <p class="hero-subtitle">Descubre historias fascinantes en episodios</p>
                     <button class="btn-view-more">Ver Más</button>
-                </div>
-            </div>
-        </div>
+                </section>
+            </section>
+        </section>
 
-        <div class="container section">
-            <div class="movie-grid">
-                <div class="movie-card">
-                    <img src="https://www.formulatv.com/images/series/posters/1800/1803/dest_1.jpg" alt="Invincible">
-                    <div class="movie-info">
+        <section class="container section">
+            <section class="movie-grid">
+                <section class="movie-card">
+                    <img src="img/Invincible.jpg" alt="Invincible">
+                    <section class="movie-info">
                         <h3>Invincible</h3>
-                    </div>
-                </div>
-                <div class="movie-card">
-                    <img src="https://www.themoviedb.org/t/p/original/fxyOJ7s5keeSBwPxcswOnl9E4cn.jpg" alt="House of the Dragon">
-                    <div class="movie-info">
+                        <button class="btn-add-cart" onclick="addToCart('Invincible', 'serie')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+                <section class="movie-card">
+                    <img src="img/house of the dragon.jpg" alt="House of the Dragon">
+                    <section class="movie-info">
                         <h3>House of the Dragon</h3>
-                    </div>
-                </div>
-                <div class="movie-card">
-                    <img src="https://www.themoviedb.org/t/p/original/dNydXKTZLQ85i90GbPMK8R1HwaV.jpg" alt="The Boys">
-                    <div class="movie-info">
+                        <button class="btn-add-cart" onclick="addToCart('House of the Dragon', 'serie')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+                <section class="movie-card">
+                    <img src="img/The Boys.jpg" alt="The Boys">
+                    <section class="movie-info">
                         <h3>The Boys</h3>
-                    </div>
-                </div>
-                <div class="movie-card">
-                    <img src="https://picfiles.alphacoders.com/422/thumb-1920-422251.jpg" alt="Breaking Bad">
-                    <div class="movie-info">
+                        <button class="btn-add-cart" onclick="addToCart('The Boys', 'serie')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+                <section class="movie-card">
+                    <img src="img/breaking bad.jpg" alt="Breaking Bad">
+                    <section class="movie-info">
                         <h3>Breaking Bad</h3>
-                    </div>
-                </div>
-                <div class="movie-card">
-                    <img src="https://picfiles.alphacoders.com/355/thumb-1920-355387.jpg" alt="Peaky Blinders">
-                    <div class="movie-info">
+                        <button class="btn-add-cart" onclick="addToCart('Breaking Bad', 'serie')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+                <section class="movie-card">
+                    <img src="img/peaky blinders.jpg" alt="Peaky Blinders">
+                    <section class="movie-info">
                         <h3>Peaky Blinders</h3>
-                    </div>
-                </div>
-                <div class="movie-card">
-                    <img src="https://wallpaperaccess.com/full/2080664.jpg" alt="Stranger Things">
-                    <div class="movie-info">
+                        <button class="btn-add-cart" onclick="addToCart('Peaky Blinders', 'serie')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+                <section class="movie-card">
+                    <img src="img/stranger things.jpg" alt="Stranger Things">
+                    <section class="movie-info">
                         <h3>Stranger Things</h3>
-                    </div>
-                </div>
-                <div class="movie-card">
-                    <img src="https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2021/11/ArcanePoster.jpg" alt="Arcane">
-                    <div class="movie-info">
+                        <button class="btn-add-cart" onclick="addToCart('Stranger Things', 'serie')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+                <section class="movie-card">
+                    <img src="img/arcane.jpg" alt="Arcane">
+                    <section class="movie-info">
                         <h3>Arcane</h3>
-                    </div>
-                </div>
-                <div class="movie-card">
-                    <img src="https://i.etsystatic.com/22639391/r/il/606558/2329915154/il_fullxfull.2329915154_g9of.jpg" alt="Juego de Tronos">
-                    <div class="movie-info">
+                        <button class="btn-add-cart" onclick="addToCart('Arcane', 'serie')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+                <section class="movie-card">
+                    <img src="img/game of thrones.jpg" alt="Juego de Tronos">
+                    <section class="movie-info">
                         <h3>Juego de Tronos</h3>
-                    </div>
-                </div>
-                <div class="movie-card">
-                    <img src="https://www.findelahistoria.com/web/wp-content/uploads/2020/04/The-walking-dead-series-tv-poster-amc.jpg" alt="The Walking Dead">
-                    <div class="movie-info">
+                        <button class="btn-add-cart" onclick="addToCart('Juego de Tronos', 'serie')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+                <section class="movie-card">
+                    <img src="img/walking dead.jpg" alt="The Walking Dead">
+                    <section class="movie-info">
                         <h3>The Walking Dead</h3>
-                    </div>
-                </div>
-                <div class="movie-card">
-                    <img src="https://m.media-amazon.com/images/I/615Gu9K2Q5L.jpg" alt="Daredevil">
-                    <div class="movie-info">
+                        <button class="btn-add-cart" onclick="addToCart('The Walking Dead', 'serie')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+                <section class="movie-card">
+                    <img src="img/daredevil.jpg" alt="Daredevil">
+                    <section class="movie-info">
                         <h3>Daredevil</h3>
-                    </div>
-                </div>
-            </div>
+                        <button class="btn-add-cart" onclick="addToCart('Daredevil', 'serie')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+                <section class="movie-card">
+                    <img src="img/from.jpg" alt="From">
+                    <section class="movie-info">
+                        <h3>From</h3>
+                        <button class="btn-add-cart" onclick="addToCart('From', 'serie')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+                <section class="movie-card">
+                    <img src="img/lost.jpg" alt="Lost">
+                    <section class="movie-info">
+                        <h3>Lost</h3>
+                        <button class="btn-add-cart" onclick="addToCart('Lost', 'serie')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+                <section class="movie-card">
+                    <img src="img/prision.jpg" alt="Prison Break">
+                    <section class="movie-info">
+                        <h3>Prison Break</h3>
+                        <button class="btn-add-cart" onclick="addToCart('Prison Break', 'serie')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+                <section class="movie-card">
+                    <img src="img/lovede.jpg" alt="Love Death Robots">
+                    <section class="movie-info">
+                        <h3>Love Death Robots</h3>
+                        <button class="btn-add-cart" onclick="addToCart('Love Death Robots', 'serie')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+                <section class="movie-card">
+                    <img src="img/dahmer.jpg" alt="Dahmer">
+                    <section class="movie-info">
+                        <h3>Dahmer</h3>
+                        <button class="btn-add-cart" onclick="addToCart('Dahmer', 'serie')">
+                            Agregar a mi Lista
+                        </button>
+                    </section>
+                </section>
+            </section>
             
-            <div class="text-center mt-5">
+            <section class="text-center mt-5">
                 <button class="btn-view-moree">Cargar más</button>
-            </div>
-        </div>
+            </section>
+        </section>
     </main>
 
     <footer class="footer">
-        <div class="container">
+        <section class="container">
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <h3>Soporte</h3>
@@ -159,9 +240,9 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© CinemaCenter, 2024. Todos los derechos reservados.</p>
+                <p>© CinemaCenter, 2024. Diseñado y maquetado por Nicolás Juliano y Marina Prochazka</p>
             </div>
-        </div>
+        </section>
     </footer>
 </body>
 </html>
